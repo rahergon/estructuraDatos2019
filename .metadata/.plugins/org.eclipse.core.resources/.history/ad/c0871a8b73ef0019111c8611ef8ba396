@@ -29,23 +29,7 @@ public class ListaSimple {
 	
 	public boolean eliminar(int dato) {
 		boolean respuesta=false;
-		Nodo temporal, anterior;
 		
-		temporal = this.getHead();
-		anterior = null;
-		
-		while(temporal != null && temporal.getInformacion()!=dato) {
-			anterior = temporal;
-			temporal=temporal.getSiguiente();
-		}
-		if(temporal!=null) {
-			if(anterior == null) {
-				this.setHead(this.getHead().getSiguiente());
-			}else {
-				anterior.setSiguiente(temporal.getSiguiente());
-			}
-			respuesta=true;
-		}
 		return respuesta;
 	}
 	

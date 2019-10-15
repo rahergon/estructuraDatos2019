@@ -45,6 +45,8 @@ public class ListaSimple {
 				anterior.setSiguiente(temporal.getSiguiente());
 			}
 			respuesta=true;
+		}else {
+			System.out.println("no se encontro el dato");
 		}
 		return respuesta;
 	}

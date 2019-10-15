@@ -24,12 +24,6 @@ public class TestListaSimple {
 		ls.listaSimple.insertar(3);
 		ls.listaSimple.insertar(100);
 		System.out.println(ls.listaSimple.imprimir().toString());
-		if(ls.listaSimple.eliminar(23)) {
-			System.out.println("eliminado");
-		}else {
-			System.out.println("no se encontro");
-		}
-		System.out.println(ls.listaSimple.imprimir().toString());
 
 	}
 

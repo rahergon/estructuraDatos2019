@@ -44,7 +44,9 @@ public class ListaSimple {
 			}else {
 				anterior.setSiguiente(temporal.getSiguiente());
 			}
-			respuesta=true;
+			respusta=true;
+		}else {
+			System.out.println("no se encontro el dato");
 		}
 		return respuesta;
 	}

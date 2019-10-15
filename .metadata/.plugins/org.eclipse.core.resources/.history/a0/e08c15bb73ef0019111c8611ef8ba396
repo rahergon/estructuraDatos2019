@@ -9,26 +9,20 @@ public class TestListaSimple {
 
 	public static void main(String[] args) {
 		TestListaSimple ls = new TestListaSimple();
-		//System.out.println(ls.listaSimple.imprimir().toString());
+		System.out.println(ls.listaSimple.imprimir().toString());
 		ls.listaSimple.insertar(10);
-		//System.out.println(ls.listaSimple.imprimir().toString());
+		System.out.println(ls.listaSimple.imprimir().toString());
 		ls.listaSimple.insertar(8);
-		//System.out.println(ls.listaSimple.imprimir().toString());
+		System.out.println(ls.listaSimple.imprimir().toString());
 		ls.listaSimple.insertar(7);
-		//System.out.println(ls.listaSimple.imprimir().toString());
+		System.out.println(ls.listaSimple.imprimir().toString());
 		ls.listaSimple.insertar(23);
-		//System.out.println(ls.listaSimple.imprimir().toString());
+		System.out.println(ls.listaSimple.imprimir().toString());
 		ls.listaSimple.insertar(32);
 		ls.listaSimple.insertar(1);
 		ls.listaSimple.insertar(78);
 		ls.listaSimple.insertar(3);
 		ls.listaSimple.insertar(100);
-		System.out.println(ls.listaSimple.imprimir().toString());
-		if(ls.listaSimple.eliminar(23)) {
-			System.out.println("eliminado");
-		}else {
-			System.out.println("no se encontro");
-		}
 		System.out.println(ls.listaSimple.imprimir().toString());
 
 	}
