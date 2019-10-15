@@ -1,0 +1,24 @@
+package listas;
+
+public class ListaSimple {
+	private Nodo head;
+	
+	public ListaSimple() {
+		this.head = null;
+	}
+	
+	public void crear() {
+		this.head = null;
+	}
+
+	public Nodo getHead() {
+		return head;
+	}
+
+	public void setHead(Nodo head) {
+		this.head = head;
+	}
+	
+	
+
+}

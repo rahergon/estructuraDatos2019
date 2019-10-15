@@ -1,0 +1,56 @@
+package listas;
+
+public class ListaSimple {
+	private Nodo head;
+	
+	public ListaSimple() {
+		this.setHead(null);
+	}
+	public boolean insertar(int dato) {
+		boolean respuesta = false;
+		Nodo nuevo = new Nodo();
+		nuevo.setInformacion(dato);
+		nuevo.setSiguiente(null);
+		
+		if(this.getHead()==null) {
+			this.setHead(nuevo);
+			respuesta = true;
+		}else {
+			Nodo temporal;
+			temporal = this.getHead();
+			while(temporal.getSiguiente()!=null) {
+				temporal = temporal.getSiguiente();
+			}
+			temporal.setSiguiente(nuevo);
+			respuesta = true;
+		}
+		return respuesta;		
+	}
+	
+	public StringBuilder imprimir() {
+		StringBuilder respuesta = new StringBuilder();
+		Nodo temporal = null;
+		temporal = this.getHead();
+		
+		respuesta.append("head-->");
+		while(temporal!=null) {
+			respuesta.append(temporal.getInformacion());
+			respuesta.append("-->");
+			temporal = temporal.getSiguiente();
+		}
+		respuesta.append("null");
+				
+		return respuesta;		
+	}
+	
+	public Nodo getHead() {
+		return head;
+	}
+	public void setHead(Nodo head) {
+		this.head = head;
+	}
+	
+	
+	
+
+}

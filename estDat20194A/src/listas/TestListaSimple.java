@@ -1,0 +1,30 @@
+package listas;
+
+public class TestListaSimple {
+	private ListaSimple listaSimple;
+	
+	public TestListaSimple() {
+		listaSimple = new ListaSimple();
+	}
+
+	public static void main(String[] args) {
+		TestListaSimple ls = new TestListaSimple();
+		System.out.println(ls.listaSimple.imprimir().toString());
+		ls.listaSimple.insertar(10);
+		System.out.println(ls.listaSimple.imprimir().toString());
+		ls.listaSimple.insertar(8);
+		System.out.println(ls.listaSimple.imprimir().toString());
+		ls.listaSimple.insertar(7);
+		System.out.println(ls.listaSimple.imprimir().toString());
+		ls.listaSimple.insertar(23);
+		System.out.println(ls.listaSimple.imprimir().toString());
+		ls.listaSimple.insertar(32);
+		ls.listaSimple.insertar(1);
+		ls.listaSimple.insertar(78);
+		ls.listaSimple.insertar(3);
+		ls.listaSimple.insertar(100);
+		System.out.println(ls.listaSimple.imprimir().toString());
+
+	}
+
+}

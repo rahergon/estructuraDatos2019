@@ -1,0 +1,34 @@
+package listas;
+
+public class ListaSimple {
+	private Nodo head;
+		
+	public void crear() {
+		this.head = null;
+	}
+	
+	public StringBuilder imprimir() {
+		StringBuilder respuesta = new StringBuilder();
+		Nodo temporal=new Nodo();
+		temporal = this.head;
+		respuesta.append("head-->");
+		while(respuesta!=null) {
+			respuesta.append(temporal.getInformacion());
+			respuesta.append("-->");
+			temporal = temporal.getSiguiente();
+		}
+		respuesta.append("null");		
+		return respuesta;
+	}
+
+	public Nodo getHead() {
+		return head;
+	}
+
+	public void setHead(Nodo head) {
+		this.head = head;
+	}
+	
+	
+
+}

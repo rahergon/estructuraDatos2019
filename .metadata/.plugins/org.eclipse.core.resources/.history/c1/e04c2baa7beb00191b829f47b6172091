@@ -1,0 +1,16 @@
+package listas;
+
+public class ListaSimple {
+	private Nodo head;
+
+	public Nodo getHead() {
+		return head;
+	}
+
+	public void setHead(Nodo head) {
+		this.head = head;
+	}
+	
+	
+
+}

@@ -1,0 +1,11 @@
+package listas;
+
+public class ListaSimple {
+	private Nodo head;
+	
+	public ListaSimple() {
+		this.head = null;
+	}
+	
+
+}

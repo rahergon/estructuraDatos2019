@@ -1,0 +1,26 @@
+package listas;
+
+public class ListaSimple {
+	private Nodo head;
+	
+	public ListaSimple() {
+		this.head = null;
+	}
+	public StringBuilder imprimir() {
+		StringBuilder respuesta = new StringBuilder();
+		Nodo temporal = null;
+		temporal = this.head;
+		
+		respuesta.append("head-->");
+		while(temporal!=null) {
+			respuesta.append(temporal.getInformacion());
+			respuesta.append("-->");
+			temporal = temporal.getSiguiente();
+		}
+		respuesta.append("null");
+				
+		return respuesta;		
+	}
+	
+
+}

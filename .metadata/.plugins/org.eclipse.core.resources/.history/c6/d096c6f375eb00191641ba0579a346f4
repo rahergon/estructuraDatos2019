@@ -1,0 +1,15 @@
+package listas;
+
+public class TestListaSimple {
+	private ListaSimple listaSimple;
+	
+	public TestListaSimple() {
+		listaSimple = new ListaSimple();
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
