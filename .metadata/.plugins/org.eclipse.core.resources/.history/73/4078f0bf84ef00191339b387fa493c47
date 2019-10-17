@@ -27,7 +27,7 @@ public class TestListaSimple {
 		System.out.println(ls.insertar(900));
 		System.out.println(ls.insertar(677));
 		System.out.println(ls.imprimir().toString());
-		if(ls.buscar(90)) {
+		if(ls.buscar(89)) {
 			System.out.println("encontrado");
 		}else {
 			System.out.println("no se encontro");

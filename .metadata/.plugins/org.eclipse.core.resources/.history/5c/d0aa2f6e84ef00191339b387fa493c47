@@ -67,19 +67,6 @@ public class ListaSimple {
 		
 		return respuesta;
 	}
-	public boolean buscar(int dato) {
-		boolean respuesta=false;
-		Nodo temporal = this.getHead();
-		
-		while(temporal!=null && temporal.getInformacion()!=dato) {
-			temporal=temporal.getSiguiente();
-		}
-		if(temporal!=null) {
-			respuesta=true;
-		}
-		
-		return respuesta;
-	}
 
 	public Nodo getHead() {
 		return head;

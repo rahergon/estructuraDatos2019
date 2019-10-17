@@ -55,9 +55,7 @@ public class ListaSimple {
 		while(temporal!=null && temporal.getInformacion()!=dato) {
 			temporal = temporal.getSiguiente();
 		}
-		if(temporal!=null) {
-			respuesta=true;
-		}
+		
 		return respuesta;
 	}
 	

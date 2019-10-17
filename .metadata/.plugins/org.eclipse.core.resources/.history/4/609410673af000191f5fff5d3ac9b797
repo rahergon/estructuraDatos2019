@@ -24,7 +24,7 @@ public class TestListaSimple {
 		ls.listaSimple.insertar(3);
 		ls.listaSimple.insertar(100);
 		System.out.println(ls.listaSimple.imprimir().toString());
-		if(ls.listaSimple.buscar(100)) {
+		if(ls.listaSimple.buscar(10)) {
 			System.out.println("encontrado");
 		}else {
 			System.out.println("no se encontro");

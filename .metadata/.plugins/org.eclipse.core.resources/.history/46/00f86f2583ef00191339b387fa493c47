@@ -55,28 +55,8 @@ public class ListaSimple {
 			temporal=temporal.getSiguiente();
 		}
 		
-		if(temporal != null) {
-			if(anterior == null) {
-				this.setHead(temporal.getSiguiente());
-			}else {
-				anterior.setSiguiente(temporal.getSiguiente());
-			}
-			respuesta = true;
-		}
 		
 		
-		return respuesta;
-	}
-	public boolean buscar(int dato) {
-		boolean respuesta=false;
-		Nodo temporal = this.getHead();
-		
-		while(temporal!=null && temporal.getInformacion()!=dato) {
-			temporal=temporal.getSiguiente();
-		}
-		if(temporal!=null) {
-			respuesta=true;
-		}
 		
 		return respuesta;
 	}
